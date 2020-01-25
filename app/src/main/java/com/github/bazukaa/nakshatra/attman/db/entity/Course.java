@@ -17,11 +17,14 @@ public class Course {
 
     private Integer courseCancelled;
 
-    public Course(String courseName, Integer courseAttended, Integer courseMissed, Integer courseCancelled) {
+    private int goal;
+
+    public Course(String courseName, Integer courseAttended, Integer courseMissed, Integer courseCancelled, int goal) {
         this.courseName = courseName;
         this.courseAttended = courseAttended;
         this.courseMissed = courseMissed;
         this.courseCancelled = courseCancelled;
+        this.goal = goal;
     }
 
     public int getId() {
@@ -62,5 +65,13 @@ public class Course {
 
     public void setCourseCancelled(Integer courseCancelled) {
         this.courseCancelled = courseCancelled;
+    }
+
+    public int getGoal() {
+        return goal;
+    }
+
+    public void setGoal(int goal) {
+        this.goal = goal;
     }
 }
